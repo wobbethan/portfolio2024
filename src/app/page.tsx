@@ -1,9 +1,5 @@
 "use client";
 import { WavyBackground } from "../components/wavy-background";
-import { TypewriterEffect } from "../components/ui/typewriter-effect";
-import { MacbookScroll } from "@/components/ui/macbook-scroll";
-import { motion } from "framer-motion";
-import { World } from "@/components/ui/globe";
 
 export default function page() {
   const globeConfig = {

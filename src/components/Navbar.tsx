@@ -274,7 +274,7 @@ const Navbar = () => {
 
             <div className="h-full flex items-center space-x-4">
               <Link
-                href={"http://localhost:3000/wobb_ethan_resume_May_2024.pdf"}
+                href={"http://localhost:3000/wobb_ethan_resume_June_2024.pdf"}
                 target="_blank"
                 rel="noopener noreferrer"
                 locale={false}
@@ -393,7 +393,7 @@ const Navbar = () => {
                     <DrawerFooter className="flex flex-row items-center gap-5">
                       <Link
                         href={
-                          "http://localhost:3000/wobb_ethan_resume_May_2024.pdf"
+                          "https://ethanwobb.com/wobb_ethan_resume_June_2024.pdf"
                         }
                         target="_blank"
                         rel="noopener noreferrer"
