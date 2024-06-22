@@ -34,20 +34,22 @@ const page: FC<pageProps> = ({ params }) => {
           height={200}
           className="rounded-full object-cover mt-10"
         />
-        <h1 className="w-full my-5 text-center text-6xl font-semibold">
+        <h1 className="w-full my-5 text-center md:text-6xl text-5xl font-semibold">
           {project.name}
         </h1>
-        <div className="w-full flex items-center justify-center">
+        <div className="w-full flex flex-wrap items-center justify-center gap-2">
           {project.stack.map((tech) => (
-            <Badge key={tech.name} className={`mx-1 text-white ${tech.color}`}>
+            <Badge key={tech.name} className={` text-white ${tech.color}`}>
               {tech.name}
             </Badge>
           ))}
         </div>
       </div>
       <div>
-        <p className="text-2xl text-wrap my-8">{project.description}</p>
-        <div className="w-full flex flex-row items-center justify-center gap-5">
+        <p className="text-2xl text-wrap my-8 text-center">
+          {project.description}
+        </p>
+        <div className="w-full flex flex-wrap items-center justify-center gap-5">
           <Card className="flex items-center justify-center hover:bg-accent hover:text-accent-foreground text-center shadow-md">
             <LinkPreview url={project.repo!}>
               <CardHeader>

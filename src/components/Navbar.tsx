@@ -34,7 +34,7 @@ import { motion } from "framer-motion";
 import { Github, Instagram, Linkedin, Menu } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "sonner";
 import * as z from "zod";
@@ -50,6 +50,7 @@ import {
 } from "./ui/form";
 import { Textarea } from "./ui/textarea";
 import sendMail from "../server/sendmail";
+import { usePathname } from "next/navigation";
 
 const container = {
   hidden: { opacity: 1, scale: 0 },
@@ -84,12 +85,19 @@ const socialContainer = {
 };
 
 const Navbar = () => {
+  const [open, setOpen] = useState<boolean>(false);
+  const [openFace, setOpenFace] = useState<boolean>(false);
+  const path = usePathname();
+  useEffect(() => {
+    setOpen(false);
+    setOpenFace(false);
+  }, [path]);
   return (
     <>
       <nav className="sticky z-[100] h-14 inset-x-0 top-0 w-full border-b border-gray-200 bg-white transition-all">
         <MaxWidthWrapper>
           <div className="flex h-14 items-center justify-between border-b border-zinc-200">
-            <Drawer>
+            <Drawer open={openFace} onOpenChange={setOpenFace}>
               <DrawerTrigger asChild>
                 <div className="flex z-40 font-semibold cursor-pointer">
                   Ethan<span className="text-primary">&nbsp;Wobb</span>
@@ -287,7 +295,7 @@ const Navbar = () => {
                 Resumé
               </Link>
               <div className="md:hidden block">
-                <Drawer>
+                <Drawer open={open} onOpenChange={setOpen}>
                   <DrawerTrigger asChild>
                     <Button className="z-40 font-semibold cursor-pointer">
                       <Menu />

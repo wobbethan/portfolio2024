@@ -9,6 +9,7 @@ export default function PersonalBio() {
           <h1 className="w-full my-5 text-center md:text-4xl font-semibold xs:text-4xl">
             Meet Ethan and some of his friends.
           </h1>
+          <video src="https://youtu.be/dVwLKWIqOkY" controls></video>
         </div>
         <div className="flex flex-col items-center justify-center gap-4">
           <h1 className="w-full my-5 text-center md:text-4xl font-semibold xs:text-4xl">
