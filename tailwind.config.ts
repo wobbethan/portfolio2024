@@ -90,6 +90,7 @@ const config = withMT({
       backgroundImage: {
         projects: "url('/project-background.png')",
         about: "url('/about.png')",
+        personal: "url('/personal-bg.png')",
       },
     },
   },

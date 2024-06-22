@@ -23,7 +23,7 @@ const page = () => {
           </CardBody>
         </Card>
         <Timeline />
-        <TitleCard title="Personal" className="bg-about my-10" />
+        <TitleCard title="Personal" className="bg-personal my-10" />
         <PersonalBio />
       </div>
     </MaxWidthWrapper>
