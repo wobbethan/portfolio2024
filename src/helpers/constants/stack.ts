@@ -1,0 +1,18 @@
+export const STACK_OPTIONS = {
+  express: { name: "Express.js", color: "bg-[#145071]" },
+  react: { name: "React.js", color: "bg-[#1877F2]" },
+  node: { name: "Node.js", color: "bg-[#509941]" },
+  ts: { name: "TypeScript", color: "bg-[#2F74C0]" },
+  js: { name: "JavaScript", color: "bg-[#E4972C]" },
+  tw: { name: "TailwindCSS", color: "bg-[#15B8C5]" },
+  mongo: { name: "MongoDB", color: "bg-[#006649]" },
+  next: { name: "Next.js 14", color: "bg-black" },
+  prisma: { name: "Prisma ORM", color: "bg-[#EA451F]" },
+  angular: { name: "Angular", color: "bg-[#D6002F]" },
+  go: { name: "Golang", color: "bg-[#78CFDE]" },
+  unity: { name: "Unity", color: "bg-black" },
+  cpp: { name: "C++", color: "bg-[#497EA6]" },
+  juce: { name: "JUCE", color: "bg-[#82BD2B]" },
+  oracle: { name: "OracleDB", color: "bg-[#F80808]" },
+  openai: { name: "Open AI", color: "bg-[#2AA581]" },
+};
