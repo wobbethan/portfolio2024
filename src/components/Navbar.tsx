@@ -94,7 +94,7 @@ const Navbar = () => {
   }, [path]);
   return (
     <>
-      <nav className="sticky z-[100] h-14 inset-x-0 top-0 w-full border-b border-gray-200 bg-white transition-all">
+      <nav className="sticky z-[9] h-14 inset-x-0 top-0 w-full border-b border-gray-200 bg-white transition-all">
         <MaxWidthWrapper>
           <div className="flex h-14 items-center justify-between border-b border-zinc-200">
             <Drawer open={openFace} onOpenChange={setOpenFace}>
@@ -180,7 +180,7 @@ const Navbar = () => {
             </Drawer>
 
             <NavigationMenu>
-              <NavigationMenuList className="md:flex items-center space-x-4 hidden">
+              <NavigationMenuList className="md:flex items-center space-x-4 hidden ">
                 <NavigationMenuItem>
                   <Link href="/" legacyBehavior passHref>
                     <NavigationMenuLink
@@ -215,19 +215,19 @@ const Navbar = () => {
                           </div>
                         </NavigationMenuLink>
                       </li>
-                      <ListItem
-                        title="Professional Timeline"
-                        className="cursor-pointer"
-                      >
-                        <Link href="/about">
+                      <Link href="/about">
+                        <ListItem
+                          title="Professional Timeline"
+                          className="cursor-pointer"
+                        >
                           Learn about Ethan&apos;s education and accomplishments
-                        </Link>{" "}
-                      </ListItem>
-                      <ListItem title="Personal" className="cursor-pointer">
-                        <Link href="/about">
+                        </ListItem>
+                      </Link>{" "}
+                      <Link href="/about">
+                        <ListItem title="Personal" className="cursor-pointer">
                           Meet Ethan&apos;s friends and favorite albums
-                        </Link>{" "}
-                      </ListItem>
+                        </ListItem>
+                      </Link>{" "}
                     </ul>
                   </NavigationMenuContent>
                 </NavigationMenuItem>
@@ -282,7 +282,7 @@ const Navbar = () => {
 
             <div className="h-full flex items-center space-x-4">
               <Link
-                href={"https://ethanwobb.com/wobb_ethan_resume_June_2024.pdf"}
+                href={"https://ethanwobb.com/wobb_ethan_resume_July_2024.pdf"}
                 target="_blank"
                 rel="noopener noreferrer"
                 locale={false}

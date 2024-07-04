@@ -62,7 +62,7 @@ const page: FC<pageProps> = ({ params }) => {
           </Card>
           {project.deploy && (
             <Card className="flex items-center justify-center hover:bg-accent hover:text-accent-foreground text-center shadow-md">
-              <LinkPreview url={project.deploy!}>
+              <LinkPreview url={project.deploy}>
                 <CardHeader>
                   <CardTitle className="text-md flex flex-row justify-center items-center gap-3 text-lg">
                     Deployed website

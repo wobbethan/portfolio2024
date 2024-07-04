@@ -388,7 +388,7 @@ export default function page() {
     },
   ];
   return (
-    <div className="h-[calc(100vh-3.5rem-1px)] w-[100vw]">
+    <div className="h-[calc(100vh-3.5rem-1px)] w-[100vw] z-[8]">
       <WavyBackground
         backgroundFill="white"
         containerClassName="overflow-x-hidden h-[calc(100vh-3.5rem-1px)] w-full flex flex-col"
