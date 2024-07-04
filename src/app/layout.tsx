@@ -10,7 +10,13 @@ import { Toaster } from "sonner";
 import { constructMetadata } from "@/lib/utils";
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = constructMetadata();
+export const metadata: Metadata = {
+  title: "Ethan Wobb: Portfolio",
+  description:
+    "Ethan Wobb's Portfolio - Explore the creative and professional work of Ethan Wobb, a talented software developer. Showcasing a diverse range of projects, skills, and achievements in computer science, Ethan's portfolio highlights his expertise and passion for fullstack development. Discover innovative solutions, unique designs, and professional accomplishments that demonstrate Ethan's commitment to excellence.",
+  icons: "/public/face.ico",
+  metadataBase: new URL("https://ethanwobb.com"),
+};
 
 export default function RootLayout({
   children,

@@ -198,7 +198,7 @@ const Portfolio: Project = {
   ],
   link: "portfolio",
   projects: ["zoom", "case-cobra", "threads"],
-  deploy: "https://ethanwobb.com/",
+  deploy: "https://ethanwobb.com",
 };
 
 const ProjectList = [
