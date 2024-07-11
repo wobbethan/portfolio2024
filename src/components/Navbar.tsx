@@ -401,7 +401,7 @@ const Navbar = () => {
                     <DrawerFooter className="flex flex-row items-center gap-5">
                       <Link
                         href={
-                          "https://ethanwobb.com/wobb_ethan_resume_June_2024.pdf"
+                          "https://ethanwobb.com/wobb_ethan_resume_July_2024.pdf"
                         }
                         target="_blank"
                         rel="noopener noreferrer"
