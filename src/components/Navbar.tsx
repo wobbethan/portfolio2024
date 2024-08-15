@@ -282,7 +282,7 @@ const Navbar = () => {
 
             <div className="h-full flex items-center space-x-4">
               <Link
-                href={"https://ethanwobb.com/wobb_ethan_resume_July_2024.pdf"}
+                href={"https://ethanwobb.com/wobb_ethan_resume_August_2024.pdf"}
                 target="_blank"
                 rel="noopener noreferrer"
                 locale={false}
