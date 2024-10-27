@@ -8,14 +8,6 @@ export default function PersonalBio() {
       <div className="flex flex-col gap-10 items-center justify-center">
         <div className="flex flex-col items-center justify-center gap-4">
           <h1 className="w-full my-5 text-center md:text-4xl font-semibold xs:text-4xl">
-            Meet Ethan and some of his friends.
-          </h1>
-          <div className="flex-shrink-0">
-            <ReactPlayer url="https://youtu.be/dVwLKWIqOkY"></ReactPlayer>
-          </div>
-        </div>
-        <div className="flex flex-col items-center justify-center gap-4">
-          <h1 className="w-full my-5 text-center md:text-4xl font-semibold xs:text-4xl">
             See what Ethan is listening to.
           </h1>
           <div className="flex  flex-col md:flex-wrap items-center flew-row gap-10 justify-center lg:flex-row">
